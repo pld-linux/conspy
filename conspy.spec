@@ -1,5 +1,5 @@
 Summary:	Conspy - remote control of Linux virtual consoles
-Summary(pl.UTF-8):   Conspy - zdalne sterowanie wirtualnymi konsolami Linuksa
+Summary(pl.UTF-8):	Conspy - zdalne sterowanie wirtualnymi konsolami Linuksa
 Name:		conspy
 Version:	1.4
 Release:	1
