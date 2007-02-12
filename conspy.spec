@@ -1,5 +1,5 @@
 Summary:	Conspy - remote control of Linux virtual consoles
-Summary(pl):	Conspy - zdalne sterowanie wirtualnymi konsolami Linuksa
+Summary(pl.UTF-8):   Conspy - zdalne sterowanie wirtualnymi konsolami Linuksa
 Name:		conspy
 Version:	1.4
 Release:	1
@@ -22,15 +22,15 @@ It is rather like VNC, but where VNC takes control of a GUI conspy
 takes control of a text mode virtual console. Unlike VNC, conspy does
 not require a server to be installed prior to being used.
 
-%description -l pl
-Conspy pozwala (tak¿e zdalnemu) u¿ytkownikowi patrzeæ, co jest
-wy¶wietlane na wirtualnej konsoli Linuksa i wysy³aæ na ni± wci¶niêcia
-klawiszy. Jak na razie dzia³a tylko z Linuksem.
+%description -l pl.UTF-8
+Conspy pozwala (takÅ¼e zdalnemu) uÅ¼ytkownikowi patrzeÄ‡, co jest
+wyÅ›wietlane na wirtualnej konsoli Linuksa i wysyÅ‚aÄ‡ na niÄ… wciÅ›niÄ™cia
+klawiszy. Jak na razie dziaÅ‚a tylko z Linuksem.
 
-Przypomina nieco VNC, ale o ile VNC przejmuje kontrolê nad
-¶rodowiskiem graficznym, conspy przejmuje kontrolê nad wirtualn±
-konsol± w trybie tekstowym. W przeciwieñstwie do VNC conspy nie wymaga
-zainstalowania serwera przed u¿ywaniem.
+Przypomina nieco VNC, ale o ile VNC przejmuje kontrolÄ™ nad
+Å›rodowiskiem graficznym, conspy przejmuje kontrolÄ™ nad wirtualnÄ…
+konsolÄ… w trybie tekstowym. W przeciwieÅ„stwie do VNC conspy nie wymaga
+zainstalowania serwera przed uÅ¼ywaniem.
 
 %prep
 %setup -q
