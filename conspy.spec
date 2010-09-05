@@ -1,12 +1,13 @@
 Summary:	Conspy - remote control of Linux virtual consoles
 Summary(pl.UTF-8):	Conspy - zdalne sterowanie wirtualnymi konsolami Linuksa
 Name:		conspy
-Version:	1.4
-Release:	2
-License:	GPL v2
+Version:	1.7
+Release:	1
+License:	EPL v1.0
 Group:		Applications
-Source0:	http://ace-host.stuart.id.au/russell/files/conspy/%{name}-%{version}.tar.bz2
-# Source0-md5:	73dfe14d5eb8f6351f115efbbbc4ed06
+Source0:	http://ace-host.stuart.id.au/russell/files/conspy/%{name}-%{version}.tar.gz
+Patch0:		tinfo.patch
+# Source0-md5:	bd2d4c1c4cec9f197309dc82c0b8539f
 URL:		http://ace-host.stuart.id.au/russell/files/conspy/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -34,19 +35,18 @@ zainstalowania serwera przed używaniem.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-
 %configure \
 	 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/conspy
-%{_mandir}/man1/*
+%{_mandir}/man1/conspy.1*

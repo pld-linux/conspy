@@ -1,0 +1,10 @@
+--- conspy-1.7/configure.in~	2009-08-23 12:40:49.000000000 +0300
++++ conspy-1.7/configure.in	2010-09-05 20:40:59.287368881 +0300
+@@ -11,6 +11,7 @@
+ AC_HEADER_STDC
+ AC_CHECK_HEADERS([fcntl.h getopt.h stdarg.h stdlib.h string.h sys/ioctl.h sys/time.h termios.h unistd.h])
+ AC_CHECK_LIB(ncurses, initscr)
++AC_CHECK_LIB(tinfo, tigetstr)
+ 
+ # Checks for typedefs, structures, and compiler characteristics.
+ AC_HEADER_TIME
