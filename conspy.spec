@@ -1,13 +1,13 @@
 Summary:	Conspy - remote control of Linux virtual consoles
 Summary(pl.UTF-8):	Conspy - zdalne sterowanie wirtualnymi konsolami Linuksa
 Name:		conspy
-Version:	1.7
+Version:	1.8
 Release:	1
 License:	EPL v1.0
 Group:		Applications
 Source0:	http://ace-host.stuart.id.au/russell/files/conspy/%{name}-%{version}.tar.gz
+# Source0-md5:	95205912d2f832665223e0c0adc0a61a
 Patch0:		tinfo.patch
-# Source0-md5:	bd2d4c1c4cec9f197309dc82c0b8539f
 URL:		http://ace-host.stuart.id.au/russell/files/conspy/
 BuildRequires:	autoconf
 BuildRequires:	automake
